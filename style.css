@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Intro, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: "Intro"; 
+    src: url("./fonts/Intro.ttf")
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+
+.wrapper {
+    width: 1024px;
+
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__me-photoBlock{
+    width: 300px;
+    background-color: #ebb95a;
+    padding: 20px 20px 90px 20px;
+    position: relative;
+    
+}
+.about__me-photo {
+    margin: 0 auto;
+    background-image: url(./img/photo.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.about__me-text {
+    position: relative;
+    font-size: 37px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+
+.about__me-text::before{
+    top: -50px;
+    left: -5px;
+    content: "“";
+    color: #e24b3a;
+    font-size: 150px;
+    position: absolute;
+    transform: rotate(15deg)
+}
+
+.about__me-text::after{
+    content: "„";
+    color: #e24b3a;
+    font-size: 150px;
+    position: absolute;
+    bottom: -23px;
+    right: -33px;
+    transform: rotate(15deg);
+}
+
+.about__me-paragraph {
+    color: #715049;
+    font-size: 35px;
+    width: 300px;
+    text-align: center;
+    margin: 30px;
+   
+    
+}
+
+.about__me-contactBlock {
+    width: 300px;
+    background-color: #178584;
+    margin-top: 20px;
+    position: relative;
+}
+.about__me-contactBlock h2{
+
+}
+
+.about__me-contactBlock i {
+    font-size: 50px;
+    color: white;
+    
+}
+
+.personal-inform-line {
+    width: 700px;
+    height: 10px;
+    background-color: #198d8c;
+    
+}
+
+.circleDecor {
+    width: 100px;
+    height: 100px;
+    
+    position: absolute;
+    border-radius: 50%;
+    right: 120px;
+    bottom: -40px;
+    background-color: white;
+
+}
+
+.personal__details {
+    display: flex;
+    background-color: #f3bf5c;
+    width: 70%;
+    margin: 0 auto;
+   
+}
+
+.personal__details i {
+    font-size: 40px;
+    color: white;
+    margin: 10px;
+
+}
+
+.personal__inform-skills-container {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+  
+}
+
+.personal__inform-skills-container >div {
+    margin: 20px;
+}
+
+
+.skills-bar {
+    position: absolute;
+    
+    width: 250px;
+    height: 25px;
+    background-color: #76534d;
+    border-radius: 10px;
+    display: inline-block;
+    right: 0;
+
+}
+
+.personal__inform-experience {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.personal__inform-experience > div {
+    position: relative;
+}
+
+.experience-year {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #19807f;
+    margin: 10px auto;
+}
+
+
+
+.experience-text {
+    width: 200px;
+    height: 40px;
+    background-color: grey;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+
+.experience-desc {
+    
+    position: absolute;
+    top: 40px;
+    right: 0;
+   
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.personal__inform-tools {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.personal__inform-toolsBar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 10px solid red;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    
+    
+    
+}
+
+
+..personal__inform-toolsBar:nth-child(1) {
+
+}
