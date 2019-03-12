@@ -19,10 +19,7 @@ h2 {
     margin: 40px;
     color: #f35441;
     font-size: 40px;
-
 }
-
-
 
 .wrapper {
     width: 1024px;
@@ -37,8 +34,8 @@ h2 {
     background-color: #ebb95a;
     padding: 30px 20px 90px 20px;
     position: relative;
-    
 }
+
 .about__me-photo {
     margin: 0 auto;
     background-image: url(./img/photo.jpg);
@@ -48,7 +45,6 @@ h2 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .about__me-text {
@@ -58,7 +54,6 @@ h2 {
     padding: 20px;
     text-align: center;
     letter-spacing: 2px;
-    
 }
 
 .about__me-text::before{
@@ -87,8 +82,6 @@ h2 {
     width: 300px;
     text-align: center;
     margin: 45px 30px;
-   
-    
 }
 
 .about__me-paragraph_two {
@@ -98,7 +91,6 @@ h2 {
     text-align: center;
     margin-top: 60px;
     padding-left: 50px;
-   
 }
 
 .improve__paragraph {
@@ -107,9 +99,7 @@ h2 {
     width: 70%;
     text-align: center;
     margin: 33px auto;
-   
 }
-
 
 .about__me-contactBlock {
     width: 300px;
@@ -140,14 +130,12 @@ h2 {
     transform: rotate(45deg);
     right: 110px;
     display: block;
-    
 }
 
 .about__me-contactBlock h2{
     color: #e5b458;
     font-size: 45px;
     position: relative;
-
 }
 
 .about__me-contactBlock h2::before{
@@ -177,8 +165,6 @@ h2 {
     color: #ebe3e1;
     margin-right: 20px;
     margin-bottom: 10px;
-    
-    
 }
 
 .personal__inform {
@@ -194,13 +180,11 @@ h2 {
     background-color: #198d8c;
     margin: 0 auto;
     position: relative;
-    
 }
 
 .circleDecor {
     width: 100px;
     height: 100px;
-    
     position: absolute;
     border-radius: 50%;
     right: 120px;
@@ -217,6 +201,7 @@ h2 {
     justify-content: space-around;
     text-align: center;
 }
+
 .personal__details > div {
     width: 20%;
     border-right: 1px dashed #ec934f;
@@ -237,8 +222,6 @@ h2 {
     font-size: 40px;
     color: #ebe3e1;
     margin: 10px;
-    
-
 }
 
 .personal__details p {
@@ -256,7 +239,6 @@ h2 {
 .personal__inform-skills-container > div {
     margin: 20px;
     font-size: 25px;
-
 }
 
 .skills-bar {
@@ -266,7 +248,6 @@ h2 {
     border-radius: 10px;
     display: inline-block;
     right: 0;
-
 }
 
 
@@ -286,11 +267,9 @@ h2 {
     background-color: #1a8c8c;
 }
 
-
 .personal__inform-skillsJs span {
     color: #f04d3a;
 }
-
 
 .personal__inform-skillsJs div {
     background-color: #f04d3a;
@@ -300,7 +279,6 @@ h2 {
     color: #f0be5b;
 }
 
-
 .personal__inform-skillsReact div{
     background-color: #f0be5b;
 }
@@ -309,13 +287,13 @@ h2 {
     width: 90%;
     margin: 0 auto;
     position: relative;
-    
 }
+
 .personal__inform-experience-container > div {
     position: relative;
     z-index: 10000;
-    
 }
+
 .personal__inform-experience-container > div:last-of-type .experience-year::after {
     display: none;
 }
@@ -324,7 +302,6 @@ h2 {
     width: 260px;
     left: 130px;
 }
-
 
 .experience-year {
     width: 60px;
@@ -337,9 +314,7 @@ h2 {
     margin-bottom: 25px;
     box-sizing: border-box;
     padding-top: 20px;
-    
 }
-
 
 .experience-year::before {
     content: "";
@@ -351,8 +326,6 @@ h2 {
     left: 215px;
     z-index: 1000;
 }
-
-
 
 .experience-year::after {
     content: "";
@@ -374,9 +347,7 @@ h2 {
     right: 0;
     position: absolute;
     top: 0;
-   
 }
-
 
 .experience-text-stud {
     width: 200px;
@@ -387,7 +358,6 @@ h2 {
     left: -24px;
     top: 160px;
     position: absolute;
-    
 }
 
 .experience-text-stud > div {
@@ -399,6 +369,7 @@ h2 {
     right: 40px;
     background-color: #1a9492;
 }
+
 .experience-text-stud > div + div {
     width: 2px;
     height: 70px;
@@ -408,8 +379,6 @@ h2 {
     right: 44px;
     background-color: #1a9492;
 }
-
-
 
 .experience-text::before {
     content: "";
@@ -421,7 +390,6 @@ h2 {
     bottom: -12px;
     left: -21px;
 }
-
 
 .experience-text-stud::before {
     content: "";
@@ -445,7 +413,6 @@ h2 {
     background-color: #1a9492;
 }
 
-
 .experience-desc {
     position: absolute;
     top: 40px;
@@ -453,9 +420,6 @@ h2 {
     padding-bottom: 10px;
     color: rgb(51, 51, 51);
 }
-
-
-
 
 .personal__inform-tools {
     position: relative;
@@ -468,13 +432,11 @@ h2 {
     height: 130px;
     box-sizing: border-box;
     padding-top: 30px;
-   
     position: relative;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
     margin-right: 20px;
-    
 }
 
 .personal__inform-Vs {
@@ -494,12 +456,11 @@ h2 {
     transform: rotate(-60deg);
 }
 
-
-
 .personal__inform-toolsBar:nth-child(2) {
     border: 12px solid #1a8a8b;
     color: #f14e3b;
 }
+
 .personal__inform-toolsBar:nth-child(3) {
     border: 12px solid #f14e3b;
     border-right: 12px solid transparent;
@@ -512,8 +473,3 @@ h2 {
     border-right: 12px solid transparent;
 }
 
-
-
-.personal__inform-toolsBar:nth-child(1) {
-
-}
