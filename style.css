@@ -17,7 +17,7 @@ body, html {
 
 .wrapper {
     width: 1024px;
-
+    background-color: #ebe3e1;
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,7 @@ body, html {
 .about__me-text {
     position: relative;
     font-size: 37px;
-    color: white;
+    color: #ebe3e1;
     padding: 20px;
     text-align: center;
     letter-spacing: 2px;
@@ -82,26 +82,89 @@ body, html {
     
 }
 
+.about__me-paragraph_two {
+    color: #d74133;
+    font-size: 35px;
+    width: 300px;
+    text-align: center;
+    margin-top: 70px;
+}
+
 .about__me-contactBlock {
     width: 300px;
     background-color: #178584;
     margin-top: 20px;
     position: relative;
+    padding: 20px 20px 90px 20px;
+    text-align: center;
+    border-radius: 25px;
+    
 }
-.about__me-contactBlock h2{
+.about__me-contactBlock::before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    background-color: #178584;
+    position: absolute;
+    bottom: 0;
+    bottom: -20px;
+    transform: rotate(45deg);
+    right: 110px;
+    display: block;
+    
+}
 
+.about__me-contactBlock h2{
+    color: #e5b458;
+    font-size: 45px;
+    position: relative;
+
+}
+
+.about__me-contactBlock h2::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #e5b458;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.about__me-contactBlock h2::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #e5b458;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 35px;
 }
 
 .about__me-contactBlock i {
     font-size: 50px;
-    color: white;
+    color: #ebe3e1;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    
     
 }
 
+.personal__inform {
+    position: relative;
+    width: 70%;
+    padding: 10px;
+}
+
 .personal-inform-line {
-    width: 700px;
-    height: 10px;
+    width: 85%;
+    height: 15px;
+    border-radius: 5px;
     background-color: #198d8c;
+    margin: 0 auto;
+    position: relative;
     
 }
 
@@ -113,23 +176,45 @@ body, html {
     border-radius: 50%;
     right: 120px;
     bottom: -40px;
-    background-color: white;
+    background-color: #ebe3e1;
 
 }
 
 .personal__details {
     display: flex;
     background-color: #f3bf5c;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
-   
+    justify-content: space-around;
+    text-align: center;
+}
+.personal__details > div {
+    width: 20%;
+    border-right: 1px dashed #ec934f;
+}
+
+.personal__details p:nth-child(2){
+    color: #177f7e;
+}
+
+.personal__details p:nth-child(3){
+    color: white;
+}
+.personal__details > div:last-of-type {
+    border: none;
 }
 
 .personal__details i {
     font-size: 40px;
-    color: white;
+    color: #ebe3e1;
     margin: 10px;
+    
 
+}
+
+.personal__details p {
+    text-align: center;
+    padding-bottom: 5px;
 }
 
 .personal__inform-skills-container {
@@ -139,21 +224,56 @@ body, html {
   
 }
 
-.personal__inform-skills-container >div {
+.personal__inform-skills-container > div {
     margin: 20px;
-}
+    font-size: 20px;
 
+}
 
 .skills-bar {
     position: absolute;
-    
     width: 250px;
     height: 25px;
-    background-color: #76534d;
     border-radius: 10px;
     display: inline-block;
     right: 0;
 
+}
+
+
+.personal__inform-skillsHtml span {
+    color: #7a554f;
+}
+
+.personal__inform-skillsHtml div {
+    background-color: #7a554f;
+}
+
+.personal__inform-skillsCss span {
+    color: #1a8c8c;
+}
+
+.personal__inform-skillsCss div {
+    background-color: #1a8c8c;
+}
+
+
+.personal__inform-skillsJs span {
+    color: #f04d3a;
+}
+
+
+.personal__inform-skillsJs div {
+    background-color: #f04d3a;
+}
+
+.personal__inform-skillsReact span {
+    color: #f0be5b;
+}
+
+
+.personal__inform-skillsReact div{
+    background-color: #f0be5b;
 }
 
 .personal__inform-experience {
@@ -169,32 +289,110 @@ body, html {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #19807f;
+    background-color: #1a9492;
     margin: 10px auto;
+    color: white;
+    text-align: center;
 }
 
+.experience-year::before {
+    content: "";
+    width: 190px;
+    height: 2px;
+    position: absolute;
+    background-color: #1a9492;
+    top: 25px;
+    left: 215px;
+    z-index: 1000;
+}
+
+.experience-year::after {
+    content: "";
+    width: 2px;
+    height: 70px;
+    position: absolute;
+    background-color: #1a9492;
+    top: 25px;
+    left: 215px;
+    z-index: 1000;
+}
 
 
 .experience-text {
     width: 200px;
+    text-align: center;
+    color: white;
     height: 40px;
     background-color: grey;
     right: 0;
     position: absolute;
     top: 0;
+   
 }
 
-.experience-desc {
+
+.experience-text-stud {
+    width: 200px;
+    text-align: center;
+    color: white;
+    height: 40px;
+    background-color: grey;
+    left: -24px;
+    top: 120px;
+    position: absolute;
     
+}
+
+.experience-text::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 70px;
+    background-color: #eee4e3;
+    transform: rotate(-30deg);
+    bottom: -12px;
+    left: -21px;
+}
+
+
+.experience-text-stud::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 70px;
+    background-color: #eee4e3;
+    transform: rotate(-30deg);
+    bottom: -12px;
+    left: -21px;
+}
+
+.experience-text::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    background-color: #1a9492;
+}
+
+
+.experience-desc {
     position: absolute;
     top: 40px;
     right: 0;
-   
+    padding-bottom: 10px;
 }
+
+
 
 h2 {
     text-align: center;
     margin: 20px 0 40px;
+    color: #f35441;
+    font-size: 35px;
+
 }
 
 .personal__inform-tools {
@@ -204,19 +402,38 @@ h2 {
 }
 
 .personal__inform-toolsBar {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 10px solid red;
+    
     display: inline-block;
     text-align: center;
     margin: 10px;
-    
-    
+}
+
+.personal__inform-toolsBar:nth-child(2) {
+    border: 12px solid #1a8a8b;
+}
+.personal__inform-toolsBar:nth-child(3) {
+    border: 12px solid #f14e3b;
+    border-right: 12px solid transparent;
+}
+
+.personal__inform-toolsBar:nth-child(4) {
+    border: 12px solid #71504b;
+    border-right: 12px solid transparent;
+}
+
+.improve__paragraph {
+    color:  #f14e3b;
+    font-size: 35px;
+    width: 70%;
+    text-align: center;
+    margin: 20px auto;
     
 }
 
 
-..personal__inform-toolsBar:nth-child(1) {
+.personal__inform-toolsBar:nth-child(1) {
 
 }
