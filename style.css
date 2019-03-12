@@ -251,12 +251,24 @@ h2 {
 }
 
 
+
 .personal__inform-skillsHtml span {
     color: #7a554f;
 }
 
 .personal__inform-skillsHtml div {
     background-color: #7a554f;
+}
+
+.personal__inform-skillsHtml div::before {
+    content: "";
+    width: 8px;
+    height: 35px;
+    position: absolute;
+    top: -5px;
+    border-radius: 3px;
+    background-color: #8b8a8a;
+    right: 25px;
 }
 
 .personal__inform-skillsCss span {
@@ -267,6 +279,19 @@ h2 {
     background-color: #1a8c8c;
 }
 
+.personal__inform-skillsCss div::before {
+    content: "";
+    width: 8px;
+    height: 35px;
+    position: absolute;
+    top: -5px;
+    border-radius: 3px;
+    background-color: #8b8a8a;
+    right: 25px;
+}
+
+
+
 .personal__inform-skillsJs span {
     color: #f04d3a;
 }
@@ -275,12 +300,34 @@ h2 {
     background-color: #f04d3a;
 }
 
+.personal__inform-skillsJs div::before{
+    content: "";
+    width: 8px;
+    height: 35px;
+    position: absolute;
+    top: -5px;
+    border-radius: 3px;
+    background-color: #8b8a8a;
+    right: 80px;
+}
+
 .personal__inform-skillsReact span {
     color: #f0be5b;
 }
 
 .personal__inform-skillsReact div{
     background-color: #f0be5b;
+}
+
+.personal__inform-skillsReact div::before {
+    content: "";
+    width: 8px;
+    height: 35px;
+    position: absolute;
+    top: -5px;
+    border-radius: 3px;
+    background-color: #8b8a8a;
+    right: 175px;
 }
 
 .personal__inform-experience {
