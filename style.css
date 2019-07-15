@@ -102,9 +102,10 @@ h2 {
 }
 
 .about__me-contactBlock {
-    width: 300px;
+    width: 280px;
     background-color: #178584;
     margin-top: 20px;
+    margin-left: 20px;
     position: relative;
     padding: 20px 20px 90px 60px;
     display: flex;
@@ -222,6 +223,11 @@ h2 {
     font-size: 40px;
     color: #ebe3e1;
     margin: 10px;
+    transition: 0.5s;
+}
+
+.personal__details div:hover i {
+    color: #fff;
 }
 
 .personal__details p {
@@ -250,7 +256,19 @@ h2 {
     right: 0;
 }
 
+.skills-bar:hover::before {
+    animation: wiggle 0.5s linear 1 forwards;
+}
 
+@keyframes wiggle {
+    0% {transform: translate(0, 0)}
+    17% {transform: translate(5px, 0)}
+    34% {transform: translate(-4px, 0)}
+    50% {transform: translate(3px, 0)}
+    67% {transform: translate(-2px, 0)}
+    83% {transform: translate(1px, 0)}
+    100% {transform: translate(0, 0)}
+}
 
 .personal__inform-skillsHtml span {
     color: #7a554f;
@@ -484,6 +502,11 @@ h2 {
     display: inline-block;
     text-align: center;
     margin-right: 20px;
+    transition: 0.3s;
+}
+
+.personal__inform-toolsBar:hover {
+    transform: rotate(360deg);
 }
 
 .personal__inform-Vs {
